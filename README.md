@@ -34,3 +34,4 @@ There is currently no way other to configure this device than by compling flashi
 }
 ``` 
 By this, Apple Home Kit, and therefore Siri as well, does know whether or not the garage door is opened. Neat, isn't it?
+You might also lower the polling interval as the http server is quite fast. I experimented with polling as low as 0.3 seconds successsfully with a rather bad WiFi coverage in my garag. But every 1.5 seconds seems to be sufficient so `"pollIntervall":1500,` is my recommendation.
