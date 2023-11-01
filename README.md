@@ -3,7 +3,7 @@ An IoT project to secure the ancient garage door motor with an ultrasonic sensor
 ## Description
 The ESP32 (I am using an ESP32-WROOM-32E) looks for an object in font of the garage door by using the JSN SR04T ultrasonic sensor.
 If the sensor reports an object closer than a given distance, a relay is switched to open. This blocks the garage door motor which expects an NC switch.
-Furthermore, the ESP32 connects to a (currently) preconfigured WiFi where it sets up a simple webserver in order to make its values readble. Each variable is printed out indivudually as plain text under its own url and all together in a json response which makes it easy to use them in smart home apps (e.g. Homebridge). There is also one option to manually overwrite the sensor readings by set car = true using a simple HTTP_GET request.
+Furthermore, the ESP32 connects to a (currently) preconfigured WiFi where it sets up a simple webserver in order to make its values readble. Each variable is printed out individually as plain text under its own url and all together in a json response which makes it easy to use them in smart home apps (e.g. Homebridge). There is also one option to manually overwrite the sensor readings by set car = true using a simple HTTP_GET request.
 If you do not have access to the WiFi and/or the webserver of the ESP32, the hardware button on the board can be used to overwrite the car sensoring: A long-press toggles the relay and a short one toggles manual_car.
 
 ## Hardware Required
