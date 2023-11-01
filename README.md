@@ -9,8 +9,8 @@ If you do not have access to the WiFi and/or the webserver of the ESP32, the har
 ## Hardware Required
 - an ESP32. Any other MCU will work as well. It needs to be capable of powering the ultrasonic sensor board with 5 V DC (otherwise you need an external powesupply for that) and at least four GPIO pins: One for the relais, one for the reed sensor and two for the JSN SR04T ultrasonic sensor (trigger and echo). Furthermore, the binary is about 760900 bytes, so you need at least 744 kbyte of storage available on your MCU. All ESP32 do have more than that (all Espressif-Boards come with at least 4 MiB flash memory).
 
-I found it very easy to work with an ESP32-WROOM-32E board that is already equipped with two relais and a LED on board, as well as a power supply circuit that allows this neat inexpensive device to be powered with 7 - 60 VDC or 5 VDC via terminal connectors. You cn even use dupon wires to power with 5 V the board while progrmaming it via USB/UART.
-- some wires and soldering lead. Optional: dupon connectors
+I found it very easy to work with an ESP32-WROOM-32E board that is already equipped with two relais and a LED on board, as well as a power supply circuit that allows this neat inexpensive device to be powered with 7 - 60 VDC or 5 VDC via terminal connectors. You cn even use dupont wires to power with 5 V the board while progrmaming it via USB/UART.
+- some wires and soldering lead. Optional: dupont connectors if you don't want to solder the wires to the ESP-board directly.
 - JSN SR04T ultrasonic sensor
 - 10 k Ohm resistor
 ## Hardware Setup
