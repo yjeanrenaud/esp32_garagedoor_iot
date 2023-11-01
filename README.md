@@ -7,11 +7,11 @@ Furthermore, the ESP32 connects to a (currently) preconfigured WiFi where it set
 If you do not have access to the WiFi and/or the webserver of the ESP32, the hardware button on the board can be used to overwrite the car sensoring: A long-press toggles the relay and a short one toggles manual_car.
 
 ## Hardware Required
-- an ESP32. Any other MCU will work as well. It needs to be capable of powering the ultrasonic sensor board with 5 V DC (otherwise you need an external powesupply for that) and at least four GPIO pins: 1 for the relais, one for the hal sensor and two for theJSN SR04T ultrasonic sensor. Furthermore, the binary is about 760900 bytes, so you need at least 761 kbyte of storage available on your MCU. All ESP32 do have more than that (all Espressif-Boards come with at least 4 MiB flash memory).
+- an ESP32. Any other MCU will work as well. It needs to be capable of powering the ultrasonic sensor board with 5 V DC (otherwise you need an external powesupply for that) and at least four GPIO pins: One for the relais, one for the reed sensor and two for the JSN SR04T ultrasonic sensor (trigger and echo). Furthermore, the binary is about 760900 bytes, so you need at least 744 kbyte of storage available on your MCU. All ESP32 do have more than that (all Espressif-Boards come with at least 4 MiB flash memory).
 
 I found it very easy to work with an ESP32-WROOM-32E board that is already equipped with two relais and a LED on board, as well as a power supply circuit that allows this neat inexpensive device to be powered with 7 - 60 VDC or 5 VDC via terminal connectors. You cn even use dupon wires to power with 5 V the board while progrmaming it via USB/UART.
 - some wires and soldering lead. Optional: dupon connectors
-- JSN SR04T hal sensor
+- JSN SR04T ultrasonic sensor
 - 10 k Ohm resistor
 ## Hardware Setup
 - todo: pictures and fritzings of the wiring, explanation of the setup, why a pulldown resistor, etc.
