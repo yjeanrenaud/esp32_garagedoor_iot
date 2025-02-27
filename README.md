@@ -17,7 +17,7 @@ I found it very easy to work with an ESP32-WROOM-32E board that is already equip
 - JSN SR04T ultrasonic sensor
 - 10 k Ohm resistor
 ## Hardware Setup
-- todo: pictures and fritzings of the wiring, explanation of the setup, why a pulldown resistor, etc.
+- TODO: pictures and fritzings of the wiring, explanation of the setup, why a pulldown resistor, etc.
 ## Configuration
 There is currently no way other to configure this device than by compling flashing a new binary onto it. 
 1. you must supply your local WiFi credentials in [wifi_creds.h](wifi_creds.h) and
@@ -40,5 +40,6 @@ By this, Apple Home Kit, and therefore Siri as well, does know whether or not th
 You might also lower the polling interval as the http server is quite fast. I experimented with polling as low as 0.3 seconds successsfully with a rather bad WiFi coverage in my garag. But every 1.5 seconds seems to be sufficient so `"pollIntervall":1500,` is my recommendation.
 
 ## todo
-- add fritzing
+- add fritzing pictures
 - add updated code for dual headed ultra sonic
+- add mqtt to the code
