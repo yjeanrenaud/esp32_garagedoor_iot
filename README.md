@@ -1,5 +1,8 @@
 # esp32_garagedoor_iot
 An IoT project to secure the ancient garage door motor with an ultrasonic sensor that checks for objects in front of the door. 
+![grafik](https://github.com/user-attachments/assets/7489fda0-28f6-4f3d-926c-d7fbf0a67761)
+![grafik](https://github.com/user-attachments/assets/ce09a748-e152-4d24-bce5-f10cb34b523b)
+
 ## Description
 The ESP32 (I am using an [ESP32-WROOM-32E](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf)) looks for an object in font of the garage door by using the JSN SR04T ultrasonic sensor.
 If the sensor reports an object closer than a given distance, a relay is switched to open. This blocks the garage door motor which expects an NC switch.
@@ -35,3 +38,7 @@ There is currently no way other to configure this device than by compling flashi
 ``` 
 By this, Apple Home Kit, and therefore Siri as well, does know whether or not the garage door is opened. Neat, isn't it?
 You might also lower the polling interval as the http server is quite fast. I experimented with polling as low as 0.3 seconds successsfully with a rather bad WiFi coverage in my garag. But every 1.5 seconds seems to be sufficient so `"pollIntervall":1500,` is my recommendation.
+
+## todo
+- add fritzing
+- add updated code for dual headed ultra sonic
